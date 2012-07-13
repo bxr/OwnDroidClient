@@ -1,0 +1,31 @@
+<oaf_info>
+
+<oaf_server iid="OAFIID:OwnDroid_Factory" type="exe" location="/home/florian/work/code/OwnDroidClient/OwnDroidApplet.py">
+
+  <oaf_attribute name="repo_ids" type="stringv">
+    <item value="IDL:Bonobo/GenericFactory:1.0"/>
+    <item value="IDL:Bonobo/Unknown:1.0"/>
+  </oaf_attribute>
+
+  <oaf_attribute name="name" type="string" value="Sample Applet Factory"/>
+  <oaf_attribute name="description" type="string" value="Sample Applet's factory that launches the applet"/>
+
+</oaf_server>
+
+
+<oaf_server iid="OAFIID:OwnDroid" type="factory" location="OAFIID:OwnDroid_Factory">
+
+  <oaf_attribute name="repo_ids" type="stringv">
+    <item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+   <item value="IDL:Bonobo/Control:1.0"/>
+    <item value="IDL:Bonobo/Unknown:1.0"/>
+  </oaf_attribute>
+
+  <oaf_attribute name="name" type="string" value="Own Droid"/>
+  <oaf_attribute name="description" type="string" value="You Own Them"/>
+  <oaf_attribute name="panel:category" type="string" value="Utility"/>
+  <oaf_attribute name="panel:icon" type="string" value="gnome-laptop.png"/>
+
+</oaf_server>
+
+</oaf_info>
